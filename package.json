@@ -1,0 +1,16 @@
+{
+  "name": "refresh-time",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "pm2 start app.js --name refresh-time && pm2 startup && pm2 save"
+  },
+  "dependencies": {
+    "applescript": "^1.0.0",
+    "node-cron": "^3.0.0"
+  },
+  "devDependencies": {
+    "pm2": "^5.1.2"
+  }
+}
